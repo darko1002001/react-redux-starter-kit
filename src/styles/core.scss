@@ -1,4 +1,5 @@
 @import 'base';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import '~normalize.css/normalize';
 
 // Some best-practice CSS that's useful for most apps
@@ -9,13 +10,19 @@ html {
 
 html,
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
