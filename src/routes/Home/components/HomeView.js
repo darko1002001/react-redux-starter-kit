@@ -10,13 +10,17 @@ export const HomeView = () => (
       <h4>Welcome To the feedback configurator</h4>
     </div>
 
-    <Link to='/counter' className="row" activeClassName='route--active'>
-      Load a merchant by ID
-    </Link>
-    <Link to='/counter' activeClassName='route--active'>
-      Login and pick a merchant
-    </Link>
-    <RaisedButton label="Default" />
+    <div className="row">
+      <Link to='/merchant/load' className="row" activeClassName='route--active'>
+        <RaisedButton label="Load merchant by id" />
+      </Link>
+    </div>
+    <div className="row">
+      <Link to='/counter' activeClassName='route--active'>
+        <RaisedButton label="login with a shore account" />
+      </Link>
+    </div>
+
   </div>
 )
 
